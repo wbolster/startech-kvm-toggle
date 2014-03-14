@@ -1,0 +1,11 @@
+#!/bin/sh
+
+notify-send \
+    --icon=keyboard \
+    --hint=int:transient:1 \
+    --app-name=kvm \
+    "Switching KVM input"
+
+xset led 3
+sleep 0.2
+xset -led 3
